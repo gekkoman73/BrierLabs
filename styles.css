@@ -43,12 +43,15 @@ body {
 }
 
 .logo {
-  font-family: 'Inter', sans-serif;
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: var(--text);
+  display: flex;
+  align-items: center;
   text-decoration: none;
-  letter-spacing: 0.05em;
+}
+
+.logo-img {
+  height: 4.5rem;
+  width: auto;
+  display: block;
 }
 
 .site-header nav {

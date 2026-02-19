@@ -50,9 +50,9 @@ body {
 
 .logo-img {
   display: block;
-  max-height: 40px;
+  height: 48px;
   width: auto;
-  max-width: 120px;
+  max-width: 200px;
   object-fit: contain;
   object-position: left center;
 }

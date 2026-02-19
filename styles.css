@@ -1,11 +1,12 @@
-/* BrierLabs — minimal, confident */
+/* BRIERLABS.IO — harmonized with logo */
 :root {
-  --bg: #0d0d0c;
-  --surface: #161614;
-  --text: #e8e6e3;
-  --text-muted: #8c8984;
-  --accent: #c4a574;
-  --accent-soft: rgba(196, 165, 116, 0.15);
+  --bg: #1a1a1a;
+  --surface: #2a2a2a;
+  --text: #ffffff;
+  --text-muted: #a0a0a0;
+  --accent-cyan: #64ffda;
+  --accent-purple: #ba55d3;
+  --accent-soft: rgba(100, 255, 218, 0.15);
 }
 
 *,
@@ -20,7 +21,7 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Outfit', system-ui, sans-serif;
+  font-family: 'Inter', system-ui, sans-serif;
   font-weight: 400;
   background: var(--bg);
   color: var(--text);
@@ -42,11 +43,15 @@ body {
 }
 
 .logo {
-  font-family: 'DM Serif Display', serif;
-  font-size: 1.5rem;
-  color: var(--text);
+  display: flex;
+  align-items: center;
   text-decoration: none;
-  letter-spacing: 0.02em;
+}
+
+.logo-img {
+  height: 2rem;
+  width: auto;
+  display: block;
 }
 
 .site-header nav {
@@ -63,7 +68,7 @@ body {
 }
 
 .site-header nav a:hover {
-  color: var(--accent);
+  color: var(--accent-cyan);
 }
 
 /* Main */
@@ -81,10 +86,17 @@ main {
   text-align: center;
 }
 
+.hero-logo {
+  width: clamp(120px, 20vw, 180px);
+  height: auto;
+  margin-bottom: 2rem;
+  display: block;
+}
+
 .hero h1 {
-  font-family: 'DM Serif Display', serif;
+  font-family: 'Inter', sans-serif;
   font-size: clamp(2.5rem, 6vw, 4rem);
-  font-weight: 400;
+  font-weight: 600;
   margin: 0 0 1rem;
   letter-spacing: -0.02em;
   line-height: 1.15;
@@ -102,7 +114,7 @@ main {
   display: inline-block;
   padding: 0.75rem 1.75rem;
   background: var(--accent-soft);
-  color: var(--accent);
+  color: var(--accent-cyan);
   text-decoration: none;
   font-weight: 500;
   border-radius: 6px;
@@ -110,7 +122,7 @@ main {
 }
 
 .cta:hover {
-  background: var(--accent);
+  background: var(--accent-cyan);
   color: var(--bg);
 }
 
@@ -123,9 +135,9 @@ main {
 
 .about h2,
 .contact h2 {
-  font-family: 'DM Serif Display', serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.5rem;
-  font-weight: 400;
+  font-weight: 600;
   margin: 0 0 0.75rem;
 }
 
@@ -137,7 +149,7 @@ main {
 }
 
 .contact .email {
-  color: var(--accent);
+  color: var(--accent-cyan);
   text-decoration: none;
   font-weight: 500;
 }

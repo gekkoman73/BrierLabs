@@ -55,11 +55,11 @@ In [Cloudflare Dashboard](https://dash.cloudflare.com) → your zone **brierlabs
 
 | Type  | Name       | Content                    | Proxy |
 |-------|------------|----------------------------|-------|
-| CNAME | `@` (apex) | `YOUR_USERNAME.github.io`  | Proxied (orange) or DNS only |
-| CNAME | `www`      | `YOUR_USERNAME.github.io`  | Proxied or DNS only          |
+| CNAME | `@` (apex) | `gekkoman73.github.io`  | Proxied (orange) or DNS only |
+| CNAME | `www`      | `gekkoman73.github.io`  | Proxied or DNS only          |
 
 - For **apex** (`brierlabs.io`), Cloudflare’s CNAME flattening lets you use a CNAME on `@`; if your plan doesn’t support it, use GitHub’s A records instead (see [GitHub’s custom domain docs](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site)).
-- Replace `YOUR_USERNAME` with your GitHub username (and use the same value as in your GitHub Pages URL).
+**Note:** For the apex domain (`brierlabs.io`), Cloudflare's CNAME flattening allows you to use a CNAME record on `@`. If your Cloudflare plan doesn't support this, use GitHub's A records instead (see [GitHub's custom domain docs](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site)).
 
 Wait a few minutes for DNS to propagate, then visit `https://brierlabs.io`. HTTPS will work once GitHub has validated the domain; you can then enable **Enforce HTTPS** in GitHub Pages.
 

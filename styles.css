@@ -1,0 +1,176 @@
+/* BrierLabs — minimal, confident */
+:root {
+  --bg: #0d0d0c;
+  --surface: #161614;
+  --text: #e8e6e3;
+  --text-muted: #8c8984;
+  --accent: #c4a574;
+  --accent-soft: rgba(196, 165, 116, 0.15);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Outfit', system-ui, sans-serif;
+  font-weight: 400;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 2rem;
+  max-width: 64rem;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.logo {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.5rem;
+  color: var(--text);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+
+.site-header nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.site-header nav a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.site-header nav a:hover {
+  color: var(--accent);
+}
+
+/* Main */
+main {
+  flex: 1;
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 0 2rem 4rem;
+  width: 100%;
+}
+
+/* Hero */
+.hero {
+  padding: 6rem 0 5rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-family: 'DM Serif Display', serif;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 400;
+  margin: 0 0 1rem;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+.hero .tagline {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  max-width: 32rem;
+  margin: 0 auto 2rem;
+  font-weight: 300;
+}
+
+.cta {
+  display: inline-block;
+  padding: 0.75rem 1.75rem;
+  background: var(--accent-soft);
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.cta:hover {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+/* Sections */
+.about,
+.contact {
+  padding: 3rem 0;
+  border-top: 1px solid var(--surface);
+}
+
+.about h2,
+.contact h2 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0 0 0.75rem;
+}
+
+.about p,
+.contact p {
+  color: var(--text-muted);
+  margin: 0 0 1rem;
+  max-width: 40rem;
+}
+
+.contact .email {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact .email:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.site-footer {
+  padding: 1.5rem 2rem;
+  border-top: 1px solid var(--surface);
+  text-align: center;
+}
+
+.site-footer p {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+@media (max-width: 640px) {
+  .site-header,
+  main {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .hero {
+    padding: 4rem 0 3rem;
+  }
+
+  .site-header nav {
+    gap: 1.25rem;
+  }
+}

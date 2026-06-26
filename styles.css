@@ -144,14 +144,10 @@ main {
   max-width: 40rem;
 }
 
-.contact .email {
-  color: var(--accent-cyan);
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.contact .email:hover {
-  text-decoration: underline;
+.contact .calendly-inline-widget {
+  margin-top: 1.5rem;
+  width: 100%;
+  max-width: 100%;
 }
 
 /* Footer */

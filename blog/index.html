@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — BRIERLABS.IO</title>
+  <link rel="icon" type="image/png" href="../assets/logo.png">
+  <link rel="apple-touch-icon" href="../assets/logo.png">
+  <meta name="description" content="Thoughts on AI, data science, and building with modern tools from BrierLabs.">
+  <link rel="canonical" href="https://brierlabs.io/blog/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css?v=3">
+</head>
+<body>
+  <header class="site-header">
+    <a href="/" class="logo">
+      <img src="../assets/logo.png" alt="BRIERLABS.IO" class="logo-img">
+    </a>
+    <nav>
+      <a href="/#about">About</a>
+      <a href="/blog/">Blog</a>
+      <a href="/#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="blog-header">
+      <h1>Blog</h1>
+      <p class="blog-intro">Notes on AI, data science, and staying ahead of the curve.</p>
+    </section>
+
+    <section class="blog-list">
+      <article class="blog-card">
+        <time class="blog-date" datetime="2026-03-26">March 26, 2026</time>
+        <h2><a href="welcome-to-brierlabs.html">Welcome to BrierLabs</a></h2>
+        <p>Why I started BrierLabs and how I help teams turn ambitious data and AI ideas into reality.</p>
+        <a href="welcome-to-brierlabs.html" class="blog-read-more">Read more</a>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> BRIERLABS. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

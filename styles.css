@@ -144,6 +144,69 @@ main {
   max-width: 40rem;
 }
 
+.about-lead {
+  font-size: 1.1rem;
+  max-width: 42rem;
+}
+
+.founder-profile {
+  display: grid;
+  grid-template-columns: minmax(200px, 280px) 1fr;
+  gap: 2.5rem;
+  align-items: start;
+  margin: 2.5rem 0 3rem;
+  padding: 2rem 0;
+  border-top: 1px solid var(--surface);
+  border-bottom: 1px solid var(--surface);
+}
+
+.founder-photo {
+  width: 100%;
+  max-width: 280px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid var(--surface);
+}
+
+.founder-bio p {
+  max-width: none;
+}
+
+.founder-bio p:last-child {
+  margin-bottom: 0;
+}
+
+.services-heading {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0 0 1.5rem;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.service-item {
+  padding: 1.5rem;
+  background: var(--surface);
+  border-radius: 8px;
+}
+
+.service-item h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem;
+}
+
+.service-item p {
+  margin: 0;
+  font-size: 0.95rem;
+  max-width: none;
+}
+
 .contact .calendly-inline-widget {
   margin-top: 1.5rem;
   width: 100%;
@@ -161,6 +224,127 @@ main {
   margin: 0;
   font-size: 0.875rem;
   color: var(--text-muted);
+}
+
+/* Blog */
+.blog-header {
+  padding: 4rem 0 2rem;
+}
+
+.blog-header h1 {
+  font-size: clamp(2rem, 5vw, 2.75rem);
+  font-weight: 600;
+  margin: 0 0 0.5rem;
+}
+
+.blog-intro {
+  color: var(--text-muted);
+  margin: 0;
+  max-width: 40rem;
+}
+
+.blog-list {
+  padding: 2rem 0 4rem;
+  border-top: 1px solid var(--surface);
+}
+
+.blog-card {
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--surface);
+}
+
+.blog-card:first-child {
+  padding-top: 0;
+}
+
+.blog-date {
+  display: block;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.blog-card h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 0.75rem;
+}
+
+.blog-card h2 a {
+  color: var(--text);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.blog-card h2 a:hover {
+  color: var(--accent-cyan);
+}
+
+.blog-card p {
+  color: var(--text-muted);
+  margin: 0 0 1rem;
+  max-width: 40rem;
+}
+
+.blog-read-more {
+  color: var(--accent-cyan);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.blog-read-more:hover {
+  text-decoration: underline;
+}
+
+.blog-post {
+  padding: 3rem 0 4rem;
+  max-width: 42rem;
+}
+
+.blog-back {
+  display: inline-block;
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+  transition: color 0.2s ease;
+}
+
+.blog-back:hover {
+  color: var(--accent-cyan);
+}
+
+.blog-post h1 {
+  font-size: clamp(2rem, 5vw, 2.75rem);
+  font-weight: 600;
+  margin: 0 0 1.5rem;
+  line-height: 1.2;
+}
+
+.blog-post h2 {
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin: 2rem 0 0.75rem;
+}
+
+.blog-post p,
+.blog-post li {
+  color: var(--text-muted);
+  margin: 0 0 1rem;
+}
+
+.blog-post ul {
+  margin: 0 0 1.5rem;
+  padding-left: 1.25rem;
+}
+
+.blog-post li {
+  margin-bottom: 0.5rem;
+}
+
+.blog-post .cta {
+  margin-top: 2rem;
 }
 
 @media (max-width: 640px) {
@@ -181,5 +365,17 @@ main {
 
   .site-header nav {
     gap: 1.25rem;
+  }
+
+  .founder-profile {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin: 2rem 0;
+    padding: 1.5rem 0;
+  }
+
+  .founder-photo {
+    max-width: 220px;
+    margin: 0 auto;
   }
 }
